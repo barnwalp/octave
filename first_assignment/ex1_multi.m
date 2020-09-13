@@ -137,7 +137,7 @@ y = data(:, 3);
 m = length(y);
 
 % Add intercept term to X
-X = [ones(m, 1) X];
+%X = [ones(m, 1) X];
 
 % Calculate the parameters from the normal equation
 theta = normalEqn(X, y);
