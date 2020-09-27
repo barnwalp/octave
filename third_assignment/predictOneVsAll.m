@@ -29,8 +29,15 @@ X = [ones(m, 1) X];
 %       are in rows, then, you can use max(A, [], 2) to obtain the max
 %       for each row.
 %
+
+% creating a matrix with probabilities for each number labels, one row
+% of the matrix will provide probability for the first input example
 all_probability = sigmoid(X * all_theta');
+
+% out of all values, find the highest probability and corresponding index
 [x, ix] = max(all_probability, [], 2);
+
+% store the index in p which denotes the predicte number
 p = ix;
 fprintf('\n %f\n\n',p)
 
