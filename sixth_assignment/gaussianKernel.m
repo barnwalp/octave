@@ -15,12 +15,15 @@ sim = 0;
 %               sigma
 %
 %
+k = length(x1);
 
+temp = 0
+for i = 1:k
+	temp += (x1(i) - x2(i))^2
+end
 
-
-
-
+sim = exp(-temp/(2*sigma*sigma))
 
 % =============================================================
-    
+
 end
